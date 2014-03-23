@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+{{#post}}
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="refresh" content="0;URL='{{@blog.url}}/#{{url}}'">
+<title>{{meta_title}}</title>
+</head>
+<body>
+<div style="display: none">
+<header>
+    <h3>{{title}}</h3>
+    <time datetime="{{date published_at format="YYYY-MM-DDTHH:mm:ss"}}">Published {{date published_at format="MMMM Do YYYY"}}</time>
+</header>
+<div class="content">
+    {{{content}}}
+</div>
+{{#if tags}}
+<div class="tags">{{tags}}</div>
+{{/if}}
+</div>
+</body>
+</html>
+{{/post}}

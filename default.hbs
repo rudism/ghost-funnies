@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<title>{{meta_title}}</title>
+<meta name="description" content="{{meta_description}}">
+<meta name="HandheldFriendly" content="True">
+<meta name="MobileOptimized" content="320">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="/assets/css/normalize.css">
+<link rel="stylesheet" href="/assets/css/nprogress.css">
+<link rel="stylesheet" href="/assets/css/screen.css">
+<link href="//fonts.googleapis.com/css?family=Averia+Sans+Libre:400,700,400italic,700italic|Titan+One" rel="stylesheet">
+<link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
+{{ghost_head}}
+</head>
+<body class="{{body_class}}">
+<div id="wrapper">
+<header class="site-header">
+    <div class="brand">
+        {{#if @blog.logo}}<a href="{{@blog.url}}"><img class="logo" src="{{@blog.logo}}" alt=""></a>{{/if}}
+        <h1><a href="{{@blog.url}}">{{@blog.title}}</a></h1>
+        <h2>{{@blog.description}}</h2>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{{@blog.url}}"><span class="fa fa-home"></span> Home</a></li>
+            <li><a href="/about"><span class="fa fa-question-circle"></span> About</a></li>
+            <li><a href="/support"><span class="fa fa-heart"></span> Support</a></li>
+        </ul>
+    </nav>
+</header>
+{{> navigation}}
+<div id="comic-wrapper">
+    <div class="comic"></div>
+</div>
+{{> navigation}}
+<div class="post-wrapper">
+    <header class="post-header"></header>
+    <div class="post-content"></div>
+</div>
+<footer class="site-footer">
+    <section class="copyright">&copy; {{date format="YYYY"}} <a href="/contact">{{@blog.title}}</a>. <a href="http://creativecommons.org/licenses/by/4.0/deed.en_US">Some rights reserved</a>.<br/>
+    <a rel="license" href="http://creativecommons.org/licenses/by/4.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by/4.0/80x15.png" /></a></section>
+            <section>Funnies theme by <a href="http://www.rudism.com/">Rudis Muiznieks</a></section>
+            <section class="poweredby">Published with <a class="icon-ghost" href="http://ghost.org"><span class="hidden">Ghost</span></a></section>
+        </div>
+    
+</footer>
+</div>
+{{{body}}}
+{{ghost_foot}}
+<script src="/assets/js/jquery.history.js"></script>
+<script src="/assets/js/nprogress.js"></script>
+<script src="/assets/js/app.js"></script>
+</body>
+</html>

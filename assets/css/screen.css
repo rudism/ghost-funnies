@@ -1,0 +1,201 @@
+body {
+    font-family: 'Averia Sans Libre', sans-serif;
+    color: #222;
+}
+h1, h2, h3, h4 {
+    font-family: 'Titan One', sans-serif;
+    font-weight: 400;
+}
+a {
+    text-decoration: none;
+    color: #046BB5;
+    transition: text-shadow ease 0.7s;
+}
+a:hover {
+    text-shadow: 0 0 3px #56A8E3;
+}
+h1 a, h2 a, h3 a, h4 a {
+    text-decoration: none;
+    color: #222;
+    transition: color ease 0.7s;
+}
+h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
+    text-shadow: none;
+    color: #046BB5;
+}
+.site-header {
+    background-color: #eee;
+    text-align: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+}
+.site-header .brand {
+    display: inline-block;
+    text-align: left;
+    white-space: nowrap;
+    margin: 15px 0 15px -100px;
+}
+.site-header .logo {
+    float: left;
+    margin-right: 20px;
+    height: 100px;
+    width: 100px;
+}
+.site-header .logo div {
+    height: 100px;
+    width: 100px;
+}
+.site-header h1, .site-header h2 {
+    padding: 0;
+    margin: 0;
+}
+.site-header h1 {
+    font-size: 3em;
+    margin-bottom: 5px;
+}
+.site-header h2 {
+    font-size: 1.33em;
+}
+.site-header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.site-header nav {
+    background-color: #444;
+    font-weight: 700;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.4);
+}
+.site-header nav ul li {
+    display: inline;
+}
+.site-header nav ul li a {
+    display: inline-block;
+    padding: 5px 10px;
+    color: #ccc;
+    transition: color ease 0.7s;
+}
+.site-header nav ul li a:hover {
+    text-shadow: none;
+    color: #56A8E3;
+}
+.comic-nav {
+    background-color: #046BB5;
+    max-width: 400px;
+    margin: 40px auto;
+    overflow: auto;
+    padding: 0 10px;
+    border-radius: 30px;
+    box-shadow: 0 1px 4px rgba(0,0,0,0.33);
+}
+.comic-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.comic-nav ul li {
+    display: inline;
+}
+.comic-nav ul li a {
+    color: #fff;
+    display: block;
+    float: left;
+    width: 20%;
+    text-align: center;
+    padding: 5px 0;
+    font-size: 0.75em;
+}
+.comic-nav ul li a .fa {
+    display: block;
+    font-size: 2em;
+    transition: margin ease 0.2s;
+}
+.comic-nav ul li a:hover .fa {
+    margin: -3px 0 3px 0;
+}
+.comic-nav ul li a:hover {
+    text-shadow: none;
+}
+.comic-nav.first-page .first a,
+.comic-nav.first-page .first a:hover,
+.comic-nav.first-page .prev a,
+.comic-nav.first-page .prev a:hover,
+.comic-nav.last-page .last a,
+.comic-nav.last-page .last a:hover,
+.comic-nav.last-page .next a,
+.comic-nav.last-page .next a:hover {
+    opacity: 0.25;
+    color: #fff;
+}
+.comic-nav.first-page .first a:hover .fa,
+.comic-nav.first-page .prev a:hover .fa,
+.comic-nav.last-page .last a:hover .fa,
+.comic-nav.last-page .next a:hover .fa {
+    margin: 0;
+}
+#comic-wrapper {
+    text-align: center;
+    overflow: hidden;
+}
+.comic {
+    display: inline-block;
+    position: relative;
+}
+.comic img {
+    max-width: 100%;
+}
+.post-wrapper {
+    max-width: 800px;
+    margin: 0 auto;
+    border-top: 1px solid #ccc;
+}
+.post-header {
+    padding: 5px 10px;
+    margin-top: 20px;
+}
+.post-header h3 {
+    font-size: 1.66em;
+    margin: 0;
+    padding: 0;
+}
+.post-header time {
+    display: block;
+    margin-top: 5px;
+    font-style: italic;
+}
+.post-content {
+    font-size: 1.1em;
+    padding: 0 10px;
+}
+.site-footer {
+    margin-top: 100px;
+    padding: 15px 0;
+    background-color: #eee;
+    border-top: 1px solid #ccc;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 0.8em;
+}
+@media only screen and (max-width: 640px) {
+    .site-header .logo {
+        height: 50px;
+        width: 50px;
+    }
+    .site-header h1 {
+        font-size: 1.5em;
+    }
+    .site-header h2 {
+        font-size: 0.75em;
+    }
+    .site-footer {
+        margin-top: 50px;
+    }
+}
+@media only screen and (max-width: 400px) {
+    .comic-nav {
+        width: 100%;
+        border-radius: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
