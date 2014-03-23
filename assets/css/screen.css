@@ -137,9 +137,9 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
     text-align: center;
     overflow: hidden;
 }
-.comic {
-    display: inline-block;
-    position: relative;
+.comic .video-wrapper {
+    margin: 0 auto;
+    max-width: 600px;
 }
 .comic img {
     max-width: 100%;
