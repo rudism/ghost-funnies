@@ -17,3 +17,5 @@ Each post must have a div with the class "comic" which contains the actual comic
     This is the post associated with the above comic.
 
 The content of that div will be pulled out of the post and placed between the top and bottom comic navigation controls. The remainder of the post will be placed below the bottom navigation control.
+
+![Screenshot](https://raw.githubusercontent.com/wiki/rudism/ghost-funnies/images/ghost-funnies-example.png)
