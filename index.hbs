@@ -1,4 +1,13 @@
 {{!< default}}
+{{> navigation}}
+<div id="comic-wrapper">
+    <div class="comic"></div>
+</div>
+{{> navigation}}
+<div class="post-wrapper">
+    <header class="post-header"></header>
+    <div class="post-content"></div>
+</div>
 <script>
 var postIndex = [
 {{#foreach posts}}    {"title":"{{title}}","url":"{{url}}"},

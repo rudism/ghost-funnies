@@ -16,7 +16,7 @@ String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
 $(document).ready(function(){
-    if(curState < 0 || curState >= postIndex.length){
+    if(curState < 0 && (window.location.pathname == "/" || window.location.pathname == "")){
         curState = 0;
         loadState(postIndex[curState].url);
     }

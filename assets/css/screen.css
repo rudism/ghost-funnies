@@ -144,10 +144,15 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover {
 .comic img {
     max-width: 100%;
 }
-.post-wrapper {
+.post-wrapper, .page-wrapper {
     max-width: 800px;
     margin: 0 auto;
+}
+.post-wrapper {
     border-top: 1px solid #ccc;
+}
+.page-wrapper {
+    margin-top: 40px;
 }
 .post-header {
     padding: 5px 10px;
