@@ -39,7 +39,7 @@ The vimeo class on the inner div is optional (leave it out for Youtube videos) a
 The asynchronous nature of this theme has the unfortunate side effect of double- or triple-counting entry page views if you're hosting on Ghost Pro. There are two entry flows that cause this, as follows:
 
 1. User enters on index page (viewcount: 1), latest comic is retrieved asynchronously and displayed (viewcount: 2).
-2. User enters on specific post (viewcount: 1), browser redirects to index page (viewcount: 2), specific post is retrieved asynchronously and displayed (viewcount: 3).
+2. User enters on specific post (viewcount: 1), browser redirects to index page (viewcount: 2), specific post is retrieved asynchronously and displayed (viewcount: maybe 3 if browser doesn't respect cache headers).
 
 I'm not sure if there's an easy way to prevent this, or if that would even be permitted by Ghost Pro.
 
