@@ -20,6 +20,8 @@ The content of that div will be pulled out of the post and placed between the to
 
 ##Notes
 
+###Videos
+
 If you want to post a video and have it be responsive, you need to wrap it in a couple extra divs.
 
     <div class="comic">
@@ -31,6 +33,19 @@ If you want to post a video and have it be responsive, you need to wrap it in a 
     </div>
 
 The vimeo class on the inner div is optional (leave it out for Youtube videos) and the widescreen class is also optional (leave it out if the video you are embedding is not widescreen).
+
+###Page Views
+
+The asynchronous nature of this theme has the unfortunate side effect of double- or triple-counting entry page views if you're hosting on Ghost Pro. There are two entry flows that cause this, as follows:
+
+1. User enters on index page (viewcount: 1), latest comic is retrieved asynchronously and displayed (viewcount: 2).
+2. User enters on specific post (viewcount: 1), browser redirects to index page (viewcount: 2), specific post is retrieved asynchronously and displayed (viewcount: 3).
+
+I'm not sure if there's an easy way to prevent this, or if that would even be permitted by Ghost Pro.
+
+###Analytics
+
+There is no analytics in the template by default, however you can add it to post.hbs, index.hbs, and integrate java event tracking into app.js if you desire. Keep in mind that the same double-counting issue explained in the previous section may apply here as well.
 
 ##Example
 
