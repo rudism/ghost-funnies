@@ -18,6 +18,7 @@ String.prototype.endsWith = function(suffix) {
 $(document).ready(function(){
     if(curState < 0 && (window.location.pathname == "/" || window.location.pathname == "")){
         curState = 0;
+        history.replaceState({state: 0}, postIndex[curState].title, postIndex[curState].url);
         loadState(postIndex[curState].url);
     }
 });
