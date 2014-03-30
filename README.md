@@ -1,6 +1,6 @@
 #Funnies
 
-A [Ghost](http://ghost.org) theme specifically tailored for webcomics.
+A [Ghost](http://ghost.org) theme specifically tailored for webcomics. Currently compatible with all versions of Ghost up to and including 0.4.2.
 
 - Minimal
 - Single page (uses [historyjs](http://historyjs.net) for state management)
