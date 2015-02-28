@@ -1,7 +1,8 @@
 var history = window.History;
 var curState = -1;
-history.Adapter.bind(window, 'statechange', function(){
-    var state = history.getState();
+(function(window,undefined){
+History.Adapter.bind(window, 'statechange', function(){
+    var state = History.getState();
     if(typeof state.data.state === 'undefined' || curState != state.data.state){
         for(var i = 0; i < postIndex.length; i++){
             if(state.url.endsWith(postIndex[i].url)){
@@ -12,6 +13,7 @@ history.Adapter.bind(window, 'statechange', function(){
     }
     loadState(state.url);
 });
+})(window);
 String.prototype.endsWith = function(suffix) {
     return this.indexOf(suffix, this.length - suffix.length) !== -1;
 };
